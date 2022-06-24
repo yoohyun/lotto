@@ -19,3 +19,15 @@ $(function(){
         }
     });    
 });
+
+
+var tempNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+var selectNum = [];
+
+for (var i = 0; i < 6; i++) {
+    var num = tempNum.splice(Math.floor((Math.random() * tempNum.length)), 1);
+    selectNum.push(num);
+    console.log("tempNum : " + tempNum);
+}
+
+console.log("selected numbers : " + selectNum);
